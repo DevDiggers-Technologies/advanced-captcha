@@ -76,7 +76,7 @@ php bin/test-free-boundary.php
 ## Support
 
 * Forum: https://wordpress.org/support/plugin/advanced-captcha/
-* Docs: https://devdiggers.com/woocommerce-advanced-captcha-plugin-documentation/
+* Docs: https://docs.devdiggers.com/advanced-captcha/
 
 ## Changelog
 

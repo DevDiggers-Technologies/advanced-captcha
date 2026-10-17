@@ -134,7 +134,7 @@ if ( ! class_exists( 'DDWCAC_Free_Init' ) ) {
 					$links,
 					[
 						'support'       => '<a href="' . esc_url( 'https://wordpress.org/support/plugin/advanced-captcha/' ) . '" target="_blank">' . esc_html__( 'Support', 'advanced-captcha' ) . '</a>',
-						'documentation' => '<a href="' . esc_url( 'https://devdiggers.com/woocommerce-advanced-captcha-plugin-documentation/' ) . '" target="_blank">' . esc_html__( 'Documentation', 'advanced-captcha' ) . '</a>',
+						'documentation' => '<a href="' . esc_url( 'https://docs.devdiggers.com/advanced-captcha/' ) . '" target="_blank">' . esc_html__( 'Documentation', 'advanced-captcha' ) . '</a>',
 						'review'        => '<a href="' . esc_url( 'https://wordpress.org/support/plugin/advanced-captcha/reviews/#new-post' ) . '" target="_blank">' . esc_html__( 'Rate the plugin', 'advanced-captcha' ) . '</a>',
 					]
 				);
