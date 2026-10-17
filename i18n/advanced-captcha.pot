@@ -1,0 +1,2081 @@
+# Copyright (C) 2026 DevDiggers
+# This file is distributed under the GPLv3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced CAPTCHA - Spam Protection for Login, Forms and "
+"WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/advanced-captcha\n"
+"POT-Creation-Date: 2026-10-17 13:33:09+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: functions.php:99 includes/admin/admin-functions.php:125
+#: includes/admin/admin-functions.php:291
+#: includes/admin/admin-functions.php:304 includes/admin/setup-wizard.php:50
+#: includes/admin-dashboard.php:61 includes/admin-dashboard.php:90
+#: includes/admin-dashboard.php:91
+msgid "Advanced CAPTCHA"
+msgstr ""
+
+#: functions.php:115 includes/admin-dashboard.php:99
+msgid "Dashboard"
+msgstr ""
+
+#: functions.php:116 includes/admin-dashboard.php:119
+msgid "Configuration"
+msgstr ""
+
+#: functions.php:117
+msgid "Setup Wizard"
+msgstr ""
+
+#: functions.php:118
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: functions.php:136
+msgid "Support"
+msgstr ""
+
+#: functions.php:137
+msgid "Documentation"
+msgstr ""
+
+#: functions.php:138
+msgid "Rate the plugin"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:105 includes/admin-dashboard.php:75
+#: templates/admin/configuration/configuration-template.php:72
+#: templates/admin/configuration/configuration-template.php:466
+msgid "Google reCAPTCHA"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:106
+#: includes/admin/setup-wizard.php:138 includes/admin-dashboard.php:76
+#: templates/admin/configuration/configuration-template.php:71
+#: templates/admin/configuration/configuration-template.php:595
+msgid "Cloudflare Turnstile"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:107
+#: includes/admin/setup-wizard.php:140 includes/admin/setup-wizard.php:149
+#: includes/admin-dashboard.php:77
+#: templates/admin/configuration/configuration-template.php:73
+#: templates/admin/configuration/configuration-template.php:653
+msgid "hCaptcha"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:132
+msgid "Protection switched on"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:133
+msgid "Advanced CAPTCHA is enabled in General settings."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:139
+#. translators: %s: provider name.
+msgid "Built-in CAPTCHA active"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:139
+msgid "%s keys saved"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:140
+msgid "Self-hosted, so it needs no keys. Switch to a hosted provider any time."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:140
+msgid "Both the site key and secret are required before any widget shows."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:146
+#. translators: %d: number of protected forms.
+msgid "%d form protected"
+msgid_plural "%d forms protected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: helper/dashboard/dashboard-helper.php:147
+msgid "Login, registration and store forms bots target."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:152
+msgid "Checkout protected"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:153
+#: includes/admin/setup-wizard.php:222
+msgid "Blocks card-testing bots on classic and block checkout."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:158
+msgid "Invisible honeypot on"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:159
+msgid "Catches form-filling bots before the CAPTCHA runs."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:165
+#: includes/admin/setup-wizard.php:285
+#: templates/admin/configuration/configuration-template.php:251
+msgid "Card-testing shield"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:166
+msgid "Repeated failed payments lock the IP and email out of checkout."
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:172
+#: includes/admin/setup-wizard.php:284
+#: templates/admin/configuration/configuration-template.php:300
+msgid "Brute-force lockout"
+msgstr ""
+
+#: helper/dashboard/dashboard-helper.php:173
+msgid "Repeat offenders are locked out instead of retrying forever."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:25
+msgid "WordPress & WooCommerce"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:26
+msgid "Form Builders"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:27
+msgid "Community & Membership"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:28
+msgid "Newsletter"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:29
+msgid "DevDiggers Plugins"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:57
+msgid "The wp-login.php screens and blog comments, the first place bots try."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:62
+#: helper/integrations/integrations-helper.php:77
+#: includes/admin/setup-wizard.php:219 includes/global-functions.php:642
+msgid "Login"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:63
+#: helper/integrations/integrations-helper.php:78
+#: includes/admin/setup-wizard.php:220 includes/global-functions.php:643
+msgid "Registration"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:64
+#: helper/integrations/integrations-helper.php:79
+#: includes/global-functions.php:644
+msgid "Lost Password"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:65
+msgid "Comments"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:72
+msgid ""
+"My Account, checkout (classic and block) and reviews. Guest Checkout stops "
+"card testing without bothering logged in customers."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:80
+msgid "Guest Checkout"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:81
+msgid "All Users Checkout"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:82
+#: includes/global-functions.php:648
+msgid "Pay for Order"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:83
+#: includes/global-functions.php:649
+msgid "Add Payment Method"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:84
+msgid "Product Reviews"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:85
+#: includes/global-functions.php:650
+msgid "Account Details"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:86
+msgid "Billing Address"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:87
+msgid "Shipping Address"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:94
+msgid ""
+"Adds an Advanced CAPTCHA button to the form editor. Insert the "
+"[ddwcac_captcha] tag where the widget should appear."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:99
+msgid "Every WPForms form, above the submit button."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:100
+msgid "Every Fluent Forms form, including multi-step ones."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:118
+msgid "Every Gravity Forms form, checked during its own validation."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:119
+msgid "The Elementor Pro Form widget on any page you build."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:120
+msgid "Forminator forms, above the submit button."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:121
+msgid "Formidable Forms, checked on the first validation pass."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:122
+msgid "The BuddyPress member registration page."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:123
+msgid "New topics and replies in bbPress forums."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:124
+msgid "Ultimate Member login, registration and password reset forms."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:125
+msgid ""
+"Mailchimp for WordPress signup forms, so fake subscribers never reach your "
+"list."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:126
+msgid "WooCommerce Affiliates"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:126
+msgid "Affiliate signup and settings forms from DevDiggers Affiliates."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:127
+msgid "The point of sale login screen from DevDiggers MultiPOS."
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:141
+msgid "Installed, needs Pro"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:141
+#: helper/integrations/integrations-helper.php:173
+msgid "Not installed"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:175
+#: templates/admin/integrations/integrations-template.php:29
+msgid "Protected"
+msgstr ""
+
+#: helper/integrations/integrations-helper.php:177
+msgid "Not protected"
+msgstr ""
+
+#: helper/verification/verification-helper.php:286
+msgid "The CAPTCHA answer is not correct. Please try the new challenge."
+msgstr ""
+
+#: helper/verification/verification-helper.php:288
+msgid "The CAPTCHA expired. Please answer the new challenge."
+msgstr ""
+
+#: includes/admin/admin-functions.php:122
+msgid ""
+"When you submit a form protected by Advanced CAPTCHA (for example login, "
+"registration, comments, contact forms or checkout), we record the form, the "
+"result of the check, your IP address, your browser user agent and the page "
+"address to detect spam and abuse. These records are deleted automatically "
+"after 30 days."
+msgstr ""
+
+#: includes/admin/admin-functions.php:123
+msgid ""
+"If this site uses Cloudflare Turnstile, Google reCAPTCHA or hCaptcha, the "
+"provider's script loads on pages with a protected form, and your IP address "
+"and the challenge response are sent to that provider to confirm you are "
+"human. Their own privacy policy applies."
+msgstr ""
+
+#: includes/admin/admin-functions.php:221
+msgid "You are not allowed to change integrations."
+msgstr ""
+
+#: includes/admin/admin-functions.php:233
+msgid "Unknown integration."
+msgstr ""
+
+#: includes/admin/admin-functions.php:254
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/admin/admin-functions.php:261
+msgid "Unknown provider."
+msgstr ""
+
+#: includes/admin/admin-functions.php:267
+msgid "Correct answer. The built-in CAPTCHA is working on this server."
+msgstr ""
+
+#: includes/admin/admin-functions.php:267
+msgid "Keys work. The provider confirmed this challenge, so your forms are ready."
+msgstr ""
+
+#: includes/admin/admin-functions.php:271
+#. translators: %s: reason the check failed.
+msgid "Verification failed: %s."
+msgstr ""
+
+#: includes/admin/admin-functions.php:305
+msgid ""
+"Insert the CAPTCHA selected in Advanced CAPTCHA settings. Submissions fail "
+"until it is solved."
+msgstr ""
+
+#: includes/admin/admin-functions.php:310
+msgid "Insert Tag"
+msgstr ""
+
+#: includes/admin/admin-functions.php:328
+msgid ""
+"CAPTCHA protection is paused: the site key or secret key for the selected "
+"provider is empty. Add both keys, or switch to the Built-in CAPTCHA, which "
+"needs no keys."
+msgstr ""
+
+#: includes/admin/admin-functions.php:349
+#: includes/admin/admin-functions.php:374
+msgid "You are not allowed to manage CAPTCHA logs."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:51
+msgid ""
+"A few quick answers and every login, signup and checkout on your store is "
+"protected."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:55
+msgid "Welcome"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:59
+#: templates/admin/logs/logs-list-template.php:112
+msgid "Provider"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:60
+msgid "Choose your CAPTCHA"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:61
+msgid ""
+"The Built-in CAPTCHA works right now with no account. Pick a hosted "
+"provider if you already have keys."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:66
+msgid "Forms"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:67
+msgid "Where should bots be stopped?"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:68
+msgid ""
+"The forms bots attack most are switched on already. Fine-tune everything "
+"later on the Integrations screen."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:73
+#: templates/admin/configuration/configuration-template.php:58
+msgid "Protection"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:74
+msgid "Extra layers"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:75
+msgid ""
+"An invisible check that works alongside the CAPTCHA, plus the layers Pro "
+"adds."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:80
+msgid "Ready!"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:81
+msgid "Your store is protected."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:82
+msgid ""
+"Open your login page in a private window to see the CAPTCHA. Every bot "
+"stopped will show up on the dashboard."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:99
+msgid "Welcome to Advanced CAPTCHA!"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:100
+msgid ""
+"Stop fake accounts, login attacks and spam. In three short steps you will "
+"choose a CAPTCHA, pick the forms to protect and switch on the invisible "
+"honeypot."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:134
+#: templates/admin/configuration/configuration-template.php:66
+msgid "CAPTCHA provider"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:135
+msgid "You can switch at any time without touching your forms."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:137
+#: templates/admin/configuration/configuration-template.php:70
+msgid "Built-in CAPTCHA (no keys needed)"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:139
+msgid "Google reCAPTCHA v2 Checkbox"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:147
+msgid "Cloudflare"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:148
+msgid "Google"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:157
+#. translators: %s: provider name.
+msgid "%s site key"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:158
+msgid "The public key from the provider dashboard."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:166
+#. translators: %s: provider name.
+msgid "%s secret key"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:167
+msgid "The private key; it never leaves your server."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:197
+msgid "Enter both keys for the selected provider, or choose the Built-in CAPTCHA."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:219
+msgid "wp-login.php and My Account, the main brute-force target."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:220
+msgid "Stops fake and spam customer accounts."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:221
+msgid "Lost password"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:221
+msgid "Prevents reset-email flooding."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:222
+msgid "Guest checkout"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:223
+msgid "Comments & reviews"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:223
+msgid "Keeps spam out of product reviews and blog comments."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:229
+msgid "Your form plugins"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:277
+msgid "Invisible honeypot"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:277
+msgid "Rejects bots that fill hidden fields or submit within seconds."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:284
+msgid "Locks an IP for an hour after 5 failures in 15 minutes."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:285
+msgid "Locks out checkout after 3 failed payments in an hour from one IP or email."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:286
+msgid "Disposable email guard"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:286
+msgid "Refuses throwaway inboxes on registration, checkout and comments."
+msgstr ""
+
+#: includes/admin/setup-wizard.php:287
+#: templates/admin/configuration/configuration-template.php:205
+msgid "Smart mode"
+msgstr ""
+
+#: includes/admin/setup-wizard.php:287
+msgid "Only show the CAPTCHA to visitors who already failed something."
+msgstr ""
+
+#: includes/admin-dashboard.php:68
+msgid "General"
+msgstr ""
+
+#: includes/admin-dashboard.php:69
+#: templates/admin/configuration/configuration-template.php:151
+msgid "Placement"
+msgstr ""
+
+#: includes/admin-dashboard.php:70
+msgid "Bot Defense"
+msgstr ""
+
+#: includes/admin-dashboard.php:71
+msgid "Fraud Shield"
+msgstr ""
+
+#: includes/admin-dashboard.php:72
+msgid "Lockout & IPs"
+msgstr ""
+
+#: includes/admin-dashboard.php:73
+msgid "Notifications"
+msgstr ""
+
+#: includes/admin-dashboard.php:74
+#: templates/admin/configuration/configuration-template.php:431
+msgid "Built-in CAPTCHA"
+msgstr ""
+
+#: includes/admin-dashboard.php:78
+msgid "Advanced"
+msgstr ""
+
+#: includes/admin-dashboard.php:104
+#: templates/admin/integrations/integrations-template.php:37
+msgid "Integrations"
+msgstr ""
+
+#: includes/admin-dashboard.php:109
+#: templates/admin/firewall/firewall-template.php:45
+msgid "Firewall"
+msgstr ""
+
+#: includes/admin-dashboard.php:114
+msgid "Logs"
+msgstr ""
+
+#: includes/admin-dashboard.php:146
+msgid "Logs Per Page"
+msgstr ""
+
+#: includes/admin-dashboard.php:222
+msgid "Could not save. Reload the page and try again."
+msgstr ""
+
+#: includes/admin-dashboard.php:223
+msgid "Delete every log entry? This cannot be undone."
+msgstr ""
+
+#: includes/admin-dashboard.php:224
+msgid "Checking with the provider..."
+msgstr ""
+
+#: includes/admin-dashboard.php:286
+msgid "Review"
+msgstr ""
+
+#: includes/admin-dashboard.php:289
+#. translators: %s: star rating link.
+msgid ""
+"If Advanced CAPTCHA keeps the bots out for you, please leave us a %s "
+"rating. It really helps."
+msgstr ""
+
+#: includes/front/front-functions.php:41
+msgid "Error:"
+msgstr ""
+
+#: includes/front/front-functions.php:228
+msgid "CAPTCHA verification failed"
+msgstr ""
+
+#: includes/global-functions.php:26
+msgid "Please complete the CAPTCHA to verify that you are not a robot."
+msgstr ""
+
+#: includes/global-functions.php:51
+msgid "Prove you are human"
+msgstr ""
+
+#: includes/global-functions.php:244
+#. translators: 1: privacy policy link, 2: terms link.
+msgid "This site is protected by reCAPTCHA and the Google %1$s and %2$s apply."
+msgstr ""
+
+#: includes/global-functions.php:244
+msgid "Privacy Policy"
+msgstr ""
+
+#: includes/global-functions.php:244
+msgid "Terms of Service"
+msgstr ""
+
+#: includes/global-functions.php:298
+msgid "Leave this field empty"
+msgstr ""
+
+#: includes/global-functions.php:364
+msgid "CAPTCHA challenge"
+msgstr ""
+
+#: includes/global-functions.php:408
+msgid "New challenge"
+msgstr ""
+
+#: includes/global-functions.php:409
+msgid "Answer"
+msgstr ""
+
+#: includes/global-functions.php:409
+msgid "Type the characters"
+msgstr ""
+
+#: includes/global-functions.php:645
+msgid "Comment"
+msgstr ""
+
+#: includes/global-functions.php:646
+msgid "Product Review"
+msgstr ""
+
+#: includes/global-functions.php:647
+msgid "Checkout"
+msgstr ""
+
+#: includes/global-functions.php:651
+msgid "Address"
+msgstr ""
+
+#: includes/global-functions.php:652
+msgid "Contact Form 7"
+msgstr ""
+
+#: includes/global-functions.php:659
+msgid "Other"
+msgstr ""
+
+#: includes/global-functions.php:678
+#: templates/admin/dashboard/dashboard-template.php:83
+msgid "Passed"
+msgstr ""
+
+#: includes/global-functions.php:679
+msgid "Failed"
+msgstr ""
+
+#: includes/global-functions.php:680
+msgid "Provider Error"
+msgstr ""
+
+#: includes/global-functions.php:693
+msgid "Verified"
+msgstr ""
+
+#: includes/global-functions.php:694
+msgid "CAPTCHA not completed"
+msgstr ""
+
+#: includes/global-functions.php:695
+msgid "Invalid or expired token"
+msgstr ""
+
+#: includes/global-functions.php:696
+msgid "Token expired or reused"
+msgstr ""
+
+#: includes/global-functions.php:697
+msgid "Secret key missing"
+msgstr ""
+
+#: includes/global-functions.php:698
+msgid "Secret key invalid"
+msgstr ""
+
+#: includes/global-functions.php:699
+msgid "Site key and secret do not match"
+msgstr ""
+
+#: includes/global-functions.php:700
+msgid "reCAPTCHA v3 score too low"
+msgstr ""
+
+#: includes/global-functions.php:701
+msgid "Provider unreachable"
+msgstr ""
+
+#: includes/global-functions.php:702
+msgid "Wrong answer"
+msgstr ""
+
+#: includes/global-functions.php:703
+msgid "Challenge expired"
+msgstr ""
+
+#: includes/global-functions.php:704
+msgid "Challenge reused"
+msgstr ""
+
+#: includes/global-functions.php:705
+msgid "Honeypot filled"
+msgstr ""
+
+#: includes/global-functions.php:706
+msgid "Submitted too fast"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:59
+msgid ""
+"Switch protection on and pick the challenge visitors see. The Built-in "
+"CAPTCHA works straight away with no account or keys."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:62
+msgid "Enable protection"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:62
+msgid "Turn every check on or off at once: the CAPTCHA and the invisible honeypot."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:62
+msgid "Protect the selected forms"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:67
+msgid ""
+"Built-in needs no keys and sends no data to third parties. Cloudflare "
+"Turnstile is the friendliest hosted option, usually invisible to real "
+"customers. Each hosted provider has its own tab for keys."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:80
+msgid "Widget language"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:81
+msgid "Auto follows the site language, and the visitor language on WPML sites."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:84
+msgid "Auto detect"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:85
+msgid "Arabic"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:86
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:87
+msgid "Chinese (Traditional)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:88
+msgid "Dutch"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:89
+msgid "English"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:90
+msgid "French"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:91
+msgid "German"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:92
+msgid "Hindi"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:93
+msgid "Indonesian"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:94
+msgid "Italian"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:95
+msgid "Japanese"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:96
+msgid "Korean"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:97
+msgid "Persian"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:98
+msgid "Polish"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:99
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:100
+msgid "Russian"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:101
+msgid "Spanish"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:102
+msgid "Turkish"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:103
+msgid "Ukrainian"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:104
+msgid "Vietnamese"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:108
+msgid "Error message"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:108
+msgid "Shown when the CAPTCHA is missing or wrong. Keep it short and friendly."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:113
+msgid "Who skips the checks"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:114
+msgid ""
+"Trusted people never see a challenge. Trusted IPs are managed on the "
+"Firewall screen."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:120
+msgid "Trusted user roles"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:121
+msgid ""
+"Logged in users with these roles skip every check, for example Shop Manager "
+"or Wholesale Customer."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:124
+msgid "No trusted roles"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:144
+msgid "Which forms are protected?"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:145
+msgid ""
+"WordPress, WooCommerce, Contact Form 7, WPForms and Fluent Forms are "
+"switched on from the Integrations screen, one card per plugin."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:147
+msgid "Open Integrations"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:152
+msgid "Where the widget sits on pages where you have a choice."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:158
+msgid "Checkout position"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:159
+msgid ""
+"Where the CAPTCHA sits on the classic checkout page. Just above the Place "
+"Order button is the most natural spot."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:162
+msgid "Above the Place Order button"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:163
+msgid "Below the Place Order button"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:164
+msgid "Above the payment methods"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:165
+msgid "Above the billing details"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:166
+msgid "Below the billing details"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:170
+msgid "Shortcode"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:170
+msgid ""
+"Place the CAPTCHA in any custom form, then verify it in the form handler "
+"with ddwcac_check_captcha_response()."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:188
+msgid "Invisible checks"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:189
+msgid ""
+"These run on every protected form before the CAPTCHA, cost customers "
+"nothing and stop most automated spam on their own."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:192
+msgid "Honeypot"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:192
+msgid ""
+"Adds a hidden field people never see. Bots that fill in every field are "
+"rejected straight away."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:192
+msgid "Add an invisible honeypot"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:196
+msgid "Minimum fill time (seconds)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:197
+msgid ""
+"Forms submitted faster than this after the page loaded are rejected. Real "
+"people need a few seconds; 2 is safe, 0 switches it off."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:205
+msgid ""
+"Visitors with a clean record only get the invisible checks and never see a "
+"CAPTCHA. After a wrong password, a failed check or a failed payment, that "
+"IP gets the full CAPTCHA for 24 hours."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:205
+msgid "Only challenge suspicious visitors"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:210
+msgid "Country rules"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:211
+msgid "Refuse protected forms from countries you do not sell to."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:215
+msgid "Shut out the countries your spam comes from, in Pro"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:216
+msgid ""
+"Most fake signups and card testing runs come from a handful of countries "
+"you never ship to. Pro refuses them before any CAPTCHA is even shown."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:218
+msgid "Block a list of countries, or allow only the countries you sell to"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:219
+msgid ""
+"Uses Cloudflare's country header or WooCommerce geolocation, no extra "
+"service or API key"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:220
+msgid ""
+"Applies to every protected form: login, registration, checkout, reviews and "
+"form plugins"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:252
+msgid ""
+"Card testers push hundreds of stolen cards through checkout, costing "
+"gateway fees and risking your merchant account."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:256
+msgid "Stop card testing before your gateway suspends you, in Pro"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:259
+#. translators: %s: number of failed orders.
+msgid "Your store had %s failed payment in the last 30 days."
+msgid_plural "Your store had %s failed payments in the last 30 days."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/configuration/configuration-template.php:260
+msgid ""
+"A CAPTCHA alone does not stop a human-assisted card testing run. Pro counts "
+"failed payments per IP and per billing email and locks both out of checkout "
+"once the pattern is clear."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:262
+msgid ""
+"Works with every gateway that marks orders Failed: Stripe, PayPal, Square, "
+"Authorize.net and more"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:263
+msgid "Set how many failed payments are allowed and within how many minutes"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:264
+msgid "Limit how many orders one IP can place per hour"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:265
+msgid "Runs on the classic and the block checkout"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:271
+msgid "Email guard"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:272
+msgid ""
+"Throwaway inboxes are how bots create fake accounts and abuse coupons and "
+"trials."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:276
+msgid "Refuse throwaway email addresses, in Pro"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:277
+msgid ""
+"Fake accounts and coupon abuse almost always use a disposable inbox. Pro "
+"refuses them at registration, checkout and in comments."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:279
+msgid ""
+"A built-in list of around 180 disposable email services, kept with the "
+"plugin"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:280
+msgid "Your own blocked domains, subdomains included"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:281
+msgid "Pick where it runs and write the message customers see"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:301
+msgid "A CAPTCHA only slows attackers down. Lockout stops them."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:305
+msgid "Lock out attackers instead of letting them retry forever, in Pro"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:306
+msgid ""
+"Credential stuffing bots try thousands of passwords. Pro locks an IP out of "
+"every protected form after a few failures, and lets a real customer back in "
+"with one click."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:308
+msgid "Choose the failed attempts allowed, the time window and the lockout length"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:309
+msgid "A permanent block list with single IPs, wildcards and ranges"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:310
+msgid ""
+"Live list of locked out IPs on the Firewall screen, with Lift Lockout and "
+"Block buttons"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:311
+msgid "Your own message for locked out visitors"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:317
+msgid "Visitor IP"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:318
+msgid ""
+"Make sure trusted IPs and the logs see the real visitor. The trusted list "
+"lives on the Firewall screen."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:324
+msgid "Visitor IP source"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:325
+msgid ""
+"Behind Cloudflare, a load balancer or a reverse proxy every visitor shares "
+"the proxy IP, so the logs would show one address for everyone. Pick the "
+"header your proxy sets. Leave on Direct connection otherwise, because these "
+"headers can be forged."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:328
+msgid "Direct connection (REMOTE_ADDR)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:329
+msgid "Cloudflare (CF-Connecting-IP)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:330
+msgid "Proxy or load balancer (X-Forwarded-For)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:331
+msgid "Nginx proxy (X-Real-IP)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:352
+msgid "Email notifications"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:353
+msgid "Know when your store is under attack without opening the dashboard."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:357
+msgid "Hear about an attack while it is happening, in Pro"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:358
+msgid ""
+"Pro emails you the moment an IP is locked out and sends a short report "
+"every Monday."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:360
+msgid ""
+"Lockout alerts for brute force and card testing, at most one every 15 "
+"minutes"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:361
+msgid ""
+"A weekly report: verifications, bots stopped, lockouts and the top "
+"offending IP"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:362
+msgid "Send them to any address, not only the site admin"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:381
+msgid "Reliability & logging"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:382
+msgid ""
+"How the plugin behaves when a provider is down, and whether it keeps a "
+"record of every check."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:385
+msgid "Provider outage"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:385
+msgid ""
+"When Google, Cloudflare or hCaptcha cannot be reached, let customers "
+"through instead of blocking checkout and login. The honeypot still runs, "
+"and the attempt is logged as a provider error."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:385
+msgid "Keep forms working during an outage"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:386
+msgid "Verification log"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:386
+msgid ""
+"Records every check (form, result, reason, IP) for the dashboard and the "
+"Logs screen. Entries older than 30 days are removed automatically once a "
+"day."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:386
+msgid "Log verifications"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:390
+msgid "Keep logs for (days)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:391
+msgid "Keep the history for up to a year to spot slow, repeated attacks."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:403
+msgid "Import & export"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:404
+msgid "Copy your setup to another store, or keep a backup before changing things."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:408
+msgid "Set up every store the same way in seconds, in Pro"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:409
+msgid ""
+"Agencies and store owners with several sites export the whole configuration "
+"to a file and import it anywhere."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:411
+msgid "One JSON file with every setting, secret keys only if you choose"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:412
+msgid "Every imported value is checked before it is saved"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:432
+msgid ""
+"A self-hosted challenge drawn by your own server. No account, no keys, no "
+"cookies and nothing sent to a third party, so it needs no extra GDPR "
+"consent."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:438
+msgid "Challenge"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:439
+msgid ""
+"A quick sum is easiest for customers. Characters are harder for bots to "
+"guess."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:442
+msgid "Simple sum (7 + 4 =)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:443
+msgid "Distorted characters (K7M3P)"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:447
+msgid "Label"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:447
+msgid "Shown above the challenge."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:467
+msgid ""
+"Create keys for this domain in the reCAPTCHA admin console. v2 and v3 keys "
+"are different: keys made for one version do not work with the other."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:470
+#: templates/admin/configuration/configuration-template.php:599
+#: templates/admin/configuration/configuration-template.php:657
+msgid "Get keys"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:480
+msgid "Version"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:481
+msgid ""
+"v2 Checkbox shows the \"I am not a robot\" box. v2 Invisible only "
+"challenges suspicious visitors. v3 never interrupts anyone and scores every "
+"request instead."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:485
+msgid "v2 Checkbox"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:486
+msgid "v2 Invisible"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:487
+msgid "v3 Invisible score"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:491
+#: templates/admin/configuration/configuration-template.php:606
+#: templates/admin/configuration/configuration-template.php:664
+msgid "Site key"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:491
+msgid "The public key for the version above."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:492
+#: templates/admin/configuration/configuration-template.php:607
+#: templates/admin/configuration/configuration-template.php:665
+msgid "Secret key"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:492
+#: templates/admin/configuration/configuration-template.php:607
+msgid "The private key. It never leaves your server."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:496
+#: templates/admin/configuration/configuration-template.php:611
+#: templates/admin/configuration/configuration-template.php:669
+msgid "Theme"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:497
+msgid "Light or dark checkbox (v2 Checkbox only)."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:500
+#: templates/admin/configuration/configuration-template.php:616
+#: templates/admin/configuration/configuration-template.php:673
+msgid "Light"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:501
+#: templates/admin/configuration/configuration-template.php:617
+#: templates/admin/configuration/configuration-template.php:674
+msgid "Dark"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:509
+#: templates/admin/configuration/configuration-template.php:624
+#: templates/admin/configuration/configuration-template.php:681
+msgid "Size"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:510
+msgid "Compact fits narrow sidebars and popups (v2 Checkbox only)."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:513
+#: templates/admin/configuration/configuration-template.php:628
+#: templates/admin/configuration/configuration-template.php:685
+msgid "Normal"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:514
+#: templates/admin/configuration/configuration-template.php:630
+#: templates/admin/configuration/configuration-template.php:686
+msgid "Compact"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:522
+#: templates/admin/configuration/configuration-template.php:634
+#: templates/admin/configuration/configuration-template.php:690
+msgid "Submit button"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:523
+msgid "Keeps the submit button disabled until the box is ticked (v2 Checkbox only)."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:525
+#: templates/admin/configuration/configuration-template.php:634
+#: templates/admin/configuration/configuration-template.php:690
+msgid "Disable submit until verified"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:532
+msgid "Minimum score"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:533
+msgid ""
+"Scores run from 0.0 (bot) to 1.0 (human). Submissions below this are "
+"refused; 0.5 suits most stores (v3 only)."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:546
+msgid "Badge"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:547
+msgid ""
+"Hides the floating badge and shows Google's required notice under the form "
+"instead, as Google allows (v3 only)."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:549
+msgid "Replace the badge with a text notice"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:556
+msgid "Low score fallback"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:557
+msgid ""
+"Instead of turning away a customer with a low score, show them a v2 "
+"checkbox for 30 minutes. Needs a separate v2 Checkbox key pair below (v3 "
+"only)."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:559
+msgid "Fall back to a v2 checkbox"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:563
+msgid "Fallback v2 site key"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:563
+msgid "A v2 Checkbox site key for the same domain."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:564
+msgid "Fallback v2 secret key"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:564
+msgid "The matching v2 secret key."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:568
+msgid "Script domain"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:569
+msgid "Use recaptcha.net where google.com is blocked, for example in China."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:596
+msgid ""
+"Free, privacy-first and usually invisible: most customers never click "
+"anything. Your site does not need to use Cloudflare."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:606
+msgid "From your Turnstile widget settings."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:612
+msgid "Auto follows the visitor's light or dark mode."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:615
+msgid "Auto"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:625
+msgid "Flexible stretches to the width of the form."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:629
+msgid "Flexible"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:634
+msgid "Keeps the submit button disabled until Turnstile has verified the visitor."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:654
+msgid ""
+"A privacy-focused alternative to reCAPTCHA, popular with stores serving the "
+"EU."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:664
+msgid "From your hCaptcha site settings."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:665
+msgid "Your account secret. It never leaves your server."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:670
+msgid "Light or dark widget."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:682
+msgid "Compact fits narrow sidebars and popups."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:690
+msgid "Keeps the submit button disabled until the challenge is solved."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:712
+msgid "Live preview & key test"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:713
+msgid ""
+"This is the widget your customers see, using the saved settings. Solve it "
+"and press Test to confirm the provider accepts your keys before you rely on "
+"them."
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:720
+msgid "Test"
+msgstr ""
+
+#: templates/admin/configuration/configuration-template.php:724
+msgid "Save a site key and secret key to see the preview."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:56
+#. translators: %s: admin display name.
+msgid "Welcome back, %s! 👋🏻"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:57
+msgid "Every bot and spam submission stopped on your site, and where it came from."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:60
+msgid "Verifications"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:61
+msgid "Bots Stopped"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:62
+msgid "Humans Passed"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:63
+msgid "Block Rate"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:64
+msgid "Attacking IPs"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:69
+msgid "Verification Activity"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:78
+msgid "Stopped"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:88
+msgid "No verifications yet"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:89
+msgid ""
+"Once visitors submit a protected form, passed and stopped attempts will be "
+"charted here."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:95
+msgid "Attacks By Form"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:102
+#: templates/admin/dashboard/dashboard-template.php:115
+msgid "Nothing stopped yet"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:103
+msgid "See which form bots hit hardest, so you know where protection matters."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:108
+msgid "Threats By Type"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:116
+msgid "Honeypot catches, failed CAPTCHAs and expired challenges, side by side."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:121
+msgid "Protection Checklist"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:126
+msgid "Top Offending IPs"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:131
+msgid "Recent Blocked Attempts"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:180
+msgid "Done"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:180
+msgid "Fix"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:197
+msgid "No offenders in this period"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:197
+msgid "IPs that fail CAPTCHA most often will be listed here."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:220
+#. translators: 1: number of failed attempts, 2: human time difference.
+msgid "%1$s stopped attempts, last %2$s ago"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:224
+msgid "Block"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:236
+#. translators: %s: number of IP addresses.
+msgid "%s IP kept trying after 5 or more failures."
+msgid_plural "%s IPs kept trying after 5 or more failures."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/dashboard/dashboard-template.php:238
+msgid "Lock them out automatically with Pro"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:253
+msgid "All quiet"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:253
+msgid "Failed attempts will appear here as they happen."
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:270
+msgid "View all logs"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:46
+msgid ""
+"Decide who gets in. Trusted visitors never see a challenge, and the IPs "
+"that attack you most are listed so you can act on them."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:59
+msgid "Visitor IP Settings"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:64
+msgid "Stopped This Week"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:65
+msgid "Attacking IPs This Week"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:66
+msgid "Trusted Rules"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:74
+msgid "Repeat Offenders"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:75
+msgid "View Logs"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:76
+msgid "IPs stopped most often in the last 7 days."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:98
+#. translators: 1: attempts, 2: time ago.
+msgid "%1$s attempt, last %2$s ago"
+msgid_plural "%1$s attempts, last %2$s ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/firewall/firewall-template.php:103
+msgid "Block IP"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:108
+msgid "No attacks in the last 7 days."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:113
+msgid "Trusted List"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:113
+msgid "Never challenged: your office, staff and payment gateway callbacks."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:113
+msgid "No trusted IPs yet."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:122
+msgid "Turn attackers away for good with Pro"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:123
+msgid ""
+"Free challenges every bot. Pro remembers them: an IP that keeps failing is "
+"locked out of every protected form, and the worst offenders go on a "
+"permanent block list."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:125
+msgid ""
+"Brute-force lockout after a few failures, with a live Locked Out Right Now "
+"list and one-click Lift Lockout"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:126
+msgid ""
+"A permanent block list with single IPs, wildcards and ranges, and a Block "
+"button next to every repeat offender"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:127
+msgid ""
+"Country rules: block the countries you never sell to, or allow only the "
+"ones you do"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:128
+msgid "Card-testing shield and disposable email guard for checkout and signups"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:137
+msgid "Your IP address:"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:139
+msgid ""
+"Rules accept single IPs, wildcards (203.0.113.*) and ranges "
+"(203.0.113.0/24). Separate several with spaces to add them at once."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:167
+#: templates/admin/firewall/firewall-template.php:168
+msgid "IP address or range"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:169
+msgid "Trust"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:178
+#. translators: %s: current visitor IP.
+msgid "Your IP %s is not trusted yet."
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:180
+msgid "Trust my IP"
+msgstr ""
+
+#: templates/admin/firewall/firewall-template.php:188
+msgid "Remove"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:28
+msgid "All"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:30
+#: templates/admin/integrations/integrations-template.php:46
+msgid "Needs Attention"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:31
+msgid "Not Installed"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:38
+msgid ""
+"Switch a plugin on and the CAPTCHA appears on its forms automatically, no "
+"shortcodes needed. Changes save instantly."
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:44
+msgid "Plugins Protected"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:45
+msgid "Forms Covered"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:47
+msgid "Supported Plugins"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:57
+msgid "Search integrations"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:58
+msgid "Search plugins"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:78
+msgid "No plugins match your search."
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:81
+msgid "Using a custom form?"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:85
+#. translators: 1: shortcode, 2: PHP function.
+msgid "Place %1$s inside it and verify the submission with %2$s."
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:121
+#. translators: %s: plugin name.
+msgid "Protect %s with Advanced CAPTCHA Pro"
+msgstr ""
+
+#: templates/admin/integrations/integrations-template.php:129
+#. translators: %s: plugin name.
+msgid "Protect %s"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:109
+msgid "Result"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:110
+msgid "Form & Page"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:111
+msgid "Visitor"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:113
+msgid "Date"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:147
+msgid "Filter by result"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:148
+#: templates/admin/logs/logs-list-template.php:149
+msgid "All results"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:154
+msgid "Filter by form"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:155
+#: templates/admin/logs/logs-list-template.php:156
+msgid "All forms"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:161
+msgid "Filter"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:172
+msgid "Delete"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:217
+msgid "Show all"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:218
+msgid "Untrust"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:218
+msgid "Trust IP"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:221
+msgid "Trusted"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:260
+msgid "Built-in"
+msgstr ""
+
+#: templates/admin/logs/logs-list-template.php:279
+msgid ""
+"No CAPTCHA verifications logged yet. Entries appear here as visitors submit "
+"protected forms."
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:41
+msgid "Verification Logs"
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:42
+msgid "Clear All Logs"
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:48
+msgid "Search IP, reason or page"
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:63
+msgid ""
+"Logging is switched off in Configuration > Advanced, so new attempts are "
+"not recorded."
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:78
+msgid "Selected log entries deleted."
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:79
+msgid "All log entries deleted."
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:80
+msgid "Added to the trusted list."
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:81
+msgid "Removed from the trusted list."
+msgstr ""
+
+#: templates/admin/logs/logs-template.php:87
+msgid ""
+"Enter a valid IP address, wildcard (203.0.113.*) or CIDR range "
+"(203.0.113.0/24)."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Advanced CAPTCHA - Spam Protection for Login, Forms and WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://devdiggers.com/product/woocommerce-advanced-captcha/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Stop spam, fake signups and login bots on WordPress and WooCommerce with a "
+"no-keys built-in CAPTCHA, Cloudflare Turnstile, Google reCAPTCHA or "
+"hCaptcha, plus an invisible honeypot and a live security dashboard."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "DevDiggers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://devdiggers.com/"
+msgstr ""

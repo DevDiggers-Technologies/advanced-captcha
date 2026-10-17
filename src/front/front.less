@@ -1,0 +1,79 @@
+// Built-in CAPTCHA and plugin notices on the storefront. Kept neutral so it sits well in any theme.
+.ddwcac-captcha-wrapper {
+    margin: 0 0 1em;
+}
+
+.ddwcac-builtin {
+    max-width: 360px;
+
+    .ddwcac-builtin-label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .ddwcac-builtin-row {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .ddwcac-builtin-image {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        display: inline-flex;
+        flex: none;
+        line-height: 0;
+        user-select: none;
+
+        svg {
+            display: block;
+            height: 44px;
+            width: auto;
+        }
+    }
+
+    .ddwcac-builtin-refresh {
+        align-items: center;
+        background: transparent;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        color: #475569;
+        cursor: pointer;
+        display: inline-flex;
+        flex: none;
+        height: 44px;
+        justify-content: center;
+        padding: 0;
+        width: 44px;
+
+        &:hover,
+        &:focus {
+            border-color: #94a3b8;
+            color: #0f172a;
+        }
+    }
+
+    .ddwcac-builtin-answer {
+        flex: 1;
+        height: 44px;
+        min-width: 80px;
+    }
+}
+
+.ddwcac-recaptcha-notice {
+    color: #64748b;
+    display: block;
+    font-size: 12px;
+    margin: 0 0 1em;
+}
+
+// Google allows hiding the badge when the notice above is shown instead.
+body:has(.ddwcac-recaptcha-notice) .grecaptcha-badge {
+    visibility: hidden;
+}
+
+.ddwcac-blocks-captcha {
+    margin: 16px 0;
+}
