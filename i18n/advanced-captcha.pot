@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Advanced CAPTCHA - Spam Protection for Login, Forms and "
 "WooCommerce 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/advanced-captcha\n"
-"POT-Creation-Date: 2026-10-17 13:33:09+00:00\n"
+"POT-Creation-Date: 2026-10-18 18:44:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -181,19 +181,19 @@ msgstr ""
 
 #: helper/integrations/integrations-helper.php:62
 #: helper/integrations/integrations-helper.php:77
-#: includes/admin/setup-wizard.php:219 includes/global-functions.php:642
+#: includes/admin/setup-wizard.php:219 includes/global-functions.php:643
 msgid "Login"
 msgstr ""
 
 #: helper/integrations/integrations-helper.php:63
 #: helper/integrations/integrations-helper.php:78
-#: includes/admin/setup-wizard.php:220 includes/global-functions.php:643
+#: includes/admin/setup-wizard.php:220 includes/global-functions.php:644
 msgid "Registration"
 msgstr ""
 
 #: helper/integrations/integrations-helper.php:64
 #: helper/integrations/integrations-helper.php:79
-#: includes/global-functions.php:644
+#: includes/global-functions.php:645
 msgid "Lost Password"
 msgstr ""
 
@@ -216,12 +216,12 @@ msgid "All Users Checkout"
 msgstr ""
 
 #: helper/integrations/integrations-helper.php:82
-#: includes/global-functions.php:648
+#: includes/global-functions.php:649
 msgid "Pay for Order"
 msgstr ""
 
 #: helper/integrations/integrations-helper.php:83
-#: includes/global-functions.php:649
+#: includes/global-functions.php:650
 msgid "Add Payment Method"
 msgstr ""
 
@@ -230,7 +230,7 @@ msgid "Product Reviews"
 msgstr ""
 
 #: helper/integrations/integrations-helper.php:85
-#: includes/global-functions.php:650
+#: includes/global-functions.php:651
 msgid "Account Details"
 msgstr ""
 
@@ -679,129 +679,129 @@ msgstr ""
 msgid "Prove you are human"
 msgstr ""
 
-#: includes/global-functions.php:244
+#: includes/global-functions.php:245
 #. translators: 1: privacy policy link, 2: terms link.
 msgid "This site is protected by reCAPTCHA and the Google %1$s and %2$s apply."
 msgstr ""
 
-#: includes/global-functions.php:244
+#: includes/global-functions.php:245
 msgid "Privacy Policy"
 msgstr ""
 
-#: includes/global-functions.php:244
+#: includes/global-functions.php:245
 msgid "Terms of Service"
 msgstr ""
 
-#: includes/global-functions.php:298
+#: includes/global-functions.php:299
 msgid "Leave this field empty"
 msgstr ""
 
-#: includes/global-functions.php:364
+#: includes/global-functions.php:365
 msgid "CAPTCHA challenge"
 msgstr ""
 
-#: includes/global-functions.php:408
+#: includes/global-functions.php:409
 msgid "New challenge"
 msgstr ""
 
-#: includes/global-functions.php:409
+#: includes/global-functions.php:410
 msgid "Answer"
 msgstr ""
 
-#: includes/global-functions.php:409
+#: includes/global-functions.php:410
 msgid "Type the characters"
 msgstr ""
 
-#: includes/global-functions.php:645
+#: includes/global-functions.php:646
 msgid "Comment"
 msgstr ""
 
-#: includes/global-functions.php:646
+#: includes/global-functions.php:647
 msgid "Product Review"
 msgstr ""
 
-#: includes/global-functions.php:647
+#: includes/global-functions.php:648
 msgid "Checkout"
 msgstr ""
 
-#: includes/global-functions.php:651
+#: includes/global-functions.php:652
 msgid "Address"
 msgstr ""
 
-#: includes/global-functions.php:652
+#: includes/global-functions.php:653
 msgid "Contact Form 7"
 msgstr ""
 
-#: includes/global-functions.php:659
+#: includes/global-functions.php:660
 msgid "Other"
 msgstr ""
 
-#: includes/global-functions.php:678
+#: includes/global-functions.php:679
 #: templates/admin/dashboard/dashboard-template.php:83
 msgid "Passed"
 msgstr ""
 
-#: includes/global-functions.php:679
+#: includes/global-functions.php:680
 msgid "Failed"
 msgstr ""
 
-#: includes/global-functions.php:680
+#: includes/global-functions.php:681
 msgid "Provider Error"
 msgstr ""
 
-#: includes/global-functions.php:693
+#: includes/global-functions.php:694
 msgid "Verified"
 msgstr ""
 
-#: includes/global-functions.php:694
+#: includes/global-functions.php:695
 msgid "CAPTCHA not completed"
 msgstr ""
 
-#: includes/global-functions.php:695
+#: includes/global-functions.php:696
 msgid "Invalid or expired token"
 msgstr ""
 
-#: includes/global-functions.php:696
+#: includes/global-functions.php:697
 msgid "Token expired or reused"
 msgstr ""
 
-#: includes/global-functions.php:697
+#: includes/global-functions.php:698
 msgid "Secret key missing"
 msgstr ""
 
-#: includes/global-functions.php:698
+#: includes/global-functions.php:699
 msgid "Secret key invalid"
 msgstr ""
 
-#: includes/global-functions.php:699
+#: includes/global-functions.php:700
 msgid "Site key and secret do not match"
 msgstr ""
 
-#: includes/global-functions.php:700
+#: includes/global-functions.php:701
 msgid "reCAPTCHA v3 score too low"
 msgstr ""
 
-#: includes/global-functions.php:701
+#: includes/global-functions.php:702
 msgid "Provider unreachable"
 msgstr ""
 
-#: includes/global-functions.php:702
+#: includes/global-functions.php:703
 msgid "Wrong answer"
 msgstr ""
 
-#: includes/global-functions.php:703
+#: includes/global-functions.php:704
 msgid "Challenge expired"
 msgstr ""
 
-#: includes/global-functions.php:704
+#: includes/global-functions.php:705
 msgid "Challenge reused"
 msgstr ""
 
-#: includes/global-functions.php:705
+#: includes/global-functions.php:706
 msgid "Honeypot filled"
 msgstr ""
 
-#: includes/global-functions.php:706
+#: includes/global-functions.php:707
 msgid "Submitted too fast"
 msgstr ""
 
