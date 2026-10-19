@@ -166,7 +166,8 @@ if ( ! class_exists( 'DDWCAC_Integrations_Helper' ) ) {
 					$card['enabled'] = in_array( $key, (array) $value, true );
 					break;
 				default:
-					$card['enabled'] = 'yes' === $value;
+					// Older versions stored '1' or 'on'; the front end treats any of them as on, so the card does too.
+					$card['enabled'] = in_array( $value, [ 'yes', '1', 'on' ], true );
 			}
 
 			if ( ! $card['detected'] ) {

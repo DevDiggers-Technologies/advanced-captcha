@@ -1,4 +1,4 @@
-=== Advanced CAPTCHA - Spam Protection for Login, Forms and WooCommerce ===
+=== Advanced CAPTCHA ===
 Contributors: devdiggers
 Plugin URI: https://devdiggers.com/product/woocommerce-advanced-captcha/
 Author: DevDiggers

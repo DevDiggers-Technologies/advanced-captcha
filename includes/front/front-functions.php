@@ -105,13 +105,8 @@ if ( ! class_exists( 'DDWCAC_Front_Functions' ) ) {
 			$response = ddwcac_check_captcha_response( 'login' );
 
 			if ( ! $response['success'] ) {
-				$error = $this->ddwcac_error_html( $response['message'] );
-
-				if ( is_wp_error( $user ) ) {
-					$user->add( 'ddwcac_verify_error', $error );
-				} else {
-					$user = new \WP_Error( 'ddwcac_verify_error', $error );
-				}
+				// Replace any username or password error: the CAPTCHA failed first, and WooCommerce shows only one message.
+				$user = new \WP_Error( 'ddwcac_verify_error', $this->ddwcac_error_html( $response['message'] ) );
 			}
 
 			return $user;
@@ -348,7 +343,7 @@ if ( ! class_exists( 'DDWCAC_Front_Functions' ) ) {
 		 * @return void
 		 */
 		public function ddwcac_add_contact_form_7_tag_button() {
-			wpcf7_add_form_tag( [ 'ddwcac_captcha', 'ddwcac_captcha*' ], [ $this, 'ddwcac_get_captcha_field_for_contact_form_7' ], [ 'name-attr' => true ] );
+			wpcf7_add_form_tag( [ 'ddwcac_captcha', 'ddwcac_captcha*' ], [ $this, 'ddwcac_get_captcha_field_for_contact_form_7' ] );
 		}
 
 		/**

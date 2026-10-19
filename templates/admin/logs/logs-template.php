@@ -45,7 +45,7 @@ if ( ! class_exists( 'DDWCAC_Logs_Template' ) ) {
 				<input type="hidden" name="page" value="<?php echo esc_attr( DDWCAC_DASHBOARD_PAGE ); ?>" />
 				<input type="hidden" name="menu" value="logs" />
 				<?php
-				$list_table->search_box( esc_html__( 'Search IP, reason or page', 'advanced-captcha' ), 'ddwcac-log-search' );
+				$list_table->search_box( esc_html__( 'Search', 'advanced-captcha' ), 'ddwcac-log-search' );
 				$list_table->display();
 				?>
 			</form>

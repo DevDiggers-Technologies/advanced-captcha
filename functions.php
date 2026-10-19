@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Advanced CAPTCHA - Spam Protection for Login, Forms and WooCommerce
+ * Plugin Name: Advanced CAPTCHA
  * Description: Stop spam, fake signups and login bots on WordPress and WooCommerce with a no-keys built-in CAPTCHA, Cloudflare Turnstile, Google reCAPTCHA or hCaptcha, plus an invisible honeypot and a live security dashboard.
  * Plugin URI: https://devdiggers.com/product/woocommerce-advanced-captcha/
  * Author: DevDiggers
