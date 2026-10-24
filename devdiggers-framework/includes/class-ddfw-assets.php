@@ -111,6 +111,7 @@ if ( ! class_exists( 'DDFW_Assets' ) ) {
 						'moreCharacter'       => esc_html__( 'or more character', 'advanced-captcha' ),
 						'noResult'            => esc_html__( 'No result Found', 'advanced-captcha' ),
 						'deleteConfirm'       => esc_html__( 'Are you sure you want to delete?', 'advanced-captcha' ),
+						'dismiss'             => esc_html__( 'Dismiss', 'advanced-captcha' ),
 					],
 					'site_url'          => site_url(),
 					'devdiggers_plugin' => $devdiggers_plugin,

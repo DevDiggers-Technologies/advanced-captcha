@@ -24,3 +24,7 @@ phpcs.xml
 README.md
 tests
 MIGRATION.md
+Thumbs.db
+__MACOSX
+graphify-out
+.graphifyignore

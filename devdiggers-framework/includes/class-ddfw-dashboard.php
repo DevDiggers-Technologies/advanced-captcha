@@ -509,6 +509,7 @@ if ( ! class_exists( 'DDFW_Dashboard' ) ) {
 					'currencySymbol' => $currency_symbol,
 					'i18n'           => [
 						'noData' => esc_html__( 'No data available', 'advanced-captcha' ),
+						'total'  => esc_html__( 'Total', 'advanced-captcha' ),
 					],
 				]
 			);
