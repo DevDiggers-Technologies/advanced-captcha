@@ -173,7 +173,7 @@ if ( ! class_exists( 'DDWCAC_Admin_Functions' ) ) {
 			}
 
 			if ( 'yes' === $default || '' === $default && preg_match( '/(enabled|_submit|_badge)$/', $key ) ) {
-				return 'yes' === $value ? 'yes' : '';
+				return in_array( $value, [ 'yes', '1', 'on', 1, true ], true ) ? 'yes' : '';
 			}
 
 			switch ( $key ) {

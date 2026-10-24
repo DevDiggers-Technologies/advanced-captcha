@@ -26,6 +26,8 @@ if ( ! class_exists( 'DDWCAC_Admin_Hooks' ) ) {
 			add_action( 'admin_init', [ $this, 'ddwcac_register_settings' ] );
 			add_action( 'admin_init', [ $this, 'ddwcac_add_privacy_policy_content' ] );
 			add_action( 'admin_notices', [ $this, 'ddwcac_missing_keys_notice' ] );
+			// The framework removes every admin notice on its own pages during admin_head; re-add this one afterwards.
+			add_action( 'admin_head', fn() => add_action( 'admin_notices', [ $this, 'ddwcac_missing_keys_notice' ] ), 99 );
 			add_action( 'admin_init', [ $this, 'ddwcac_handle_bulk_logs' ] );
 			add_action( 'admin_post_ddwcac_log_action', [ $this, 'ddwcac_handle_log_action' ] );
 			add_action( 'wp_ajax_ddwcac_test_captcha', [ $this, 'ddwcac_test_captcha' ] );

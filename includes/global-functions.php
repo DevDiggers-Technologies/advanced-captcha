@@ -212,7 +212,8 @@ if ( ! function_exists( 'ddwcac_get_captcha_field' ) ) {
 
 		// Smart mode: a visitor with no failures behind them only gets the invisible checks.
 		if ( 'builtin' === $type ) {
-			return $html . ddwcac_get_builtin_field( $style );
+			// The -15px pull only widens third-party widgets to fit wp-login; the built-in field fits as is.
+			return $html . ddwcac_get_builtin_field( false === strpos( $style, 'margin-left' ) ? $style : '' );
 		}
 
 		if ( ! ddwcac_is_provider_ready( $type, $config ) ) {

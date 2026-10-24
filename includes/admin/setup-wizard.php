@@ -292,7 +292,8 @@ if ( ! class_exists( 'DDWCAC_Setup_Wizard' ) ) {
 						'type'           => 'checkbox',
 						'id'             => 'wizard-' . $id,
 						'label'          => $row[0],
-						'checkbox_label' => $row[1],
+						'checkbox_label' => __( 'Turn on', 'advanced-captcha' ),
+						'description'    => $row[1],
 						'value'          => '',
 					],
 					'ddwcac'
@@ -328,7 +329,8 @@ if ( ! class_exists( 'DDWCAC_Setup_Wizard' ) ) {
 					'type'           => 'checkbox',
 					'name'           => $row[0],
 					'label'          => $row[1],
-					'checkbox_label' => $row[2],
+					'checkbox_label' => __( 'Turn on', 'advanced-captcha' ),
+					'description'    => $row[2],
 					'value'          => $row[3] ? 'yes' : '',
 				],
 				$rows

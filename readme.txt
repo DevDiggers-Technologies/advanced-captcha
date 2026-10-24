@@ -1,4 +1,4 @@
-=== Advanced CAPTCHA - Spam Protection for Login, Forms and WooCommerce ===
+=== Advanced CAPTCHA ===
 Contributors: devdiggers
 Plugin URI: https://devdiggers.com/product/woocommerce-advanced-captcha/
 Author: DevDiggers
@@ -26,7 +26,7 @@ Everything is set up from one dashboard. A short setup wizard picks the provider
 = Quick links =
 
 * [Live Demo](https://demo.devdiggers.com/woocommerce-advanced-captcha-free/)
-* [Documentation](https://devdiggers.com/woocommerce-advanced-captcha-plugin-documentation/)
+* [Documentation](https://docs.devdiggers.com/advanced-captcha/)
 * [Advanced CAPTCHA Pro](https://devdiggers.com/product/woocommerce-advanced-captcha/)
 * [Support forum](https://wordpress.org/support/plugin/advanced-captcha/)
 
@@ -204,7 +204,7 @@ Yes. Pro uses the same settings, so everything you configured stays in place.
 
 = Where can I get help? =
 
-Ask in the [support forum](https://wordpress.org/support/plugin/advanced-captcha/) or read the [documentation](https://devdiggers.com/woocommerce-advanced-captcha-plugin-documentation/).
+Ask in the [support forum](https://wordpress.org/support/plugin/advanced-captcha/) or read the [documentation](https://docs.devdiggers.com/advanced-captcha/).
 
 == Screenshots ==
 
