@@ -33,6 +33,9 @@ if ( ! class_exists( 'DDWCAC_File_Handler' ) ) {
 			// Log cleanup and the built-in challenge refresh run whatever the request type.
 			new Common\DDWCAC_Common_Hooks( $this->ddwcac_configuration );
 
+			// AI assistants (MCP), through the DevDiggers AI & MCP hub. REST requests are not admin ones.
+			new Integrations\DDWCAC_MCP_Integration( $this->ddwcac_configuration );
+
 			if ( is_admin() ) {
 				new DDWCAC_Admin_Dashboard( $this->ddwcac_configuration );
 				new Admin\DDWCAC_Setup_Wizard( $this->ddwcac_configuration );

@@ -1,6 +1,6 @@
 {
   "name": "advanced-captcha",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Advanced CAPTCHA",
   "main": "index.js",
   "scripts": {

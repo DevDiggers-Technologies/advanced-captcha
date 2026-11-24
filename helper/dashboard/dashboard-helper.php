@@ -51,7 +51,6 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Helper' ) ) {
 			$total        = $current['passed'] + $current['stopped'];
 			$total_before = $before['passed'] + $before['stopped'];
 			$rate         = $total ? round( $current['stopped'] / $total * 100, 1 ) : 0;
-			$rate_before  = $total_before ? round( $before['stopped'] / $total_before * 100, 1 ) : 0;
 
 			$forms = array_map(
 				function ( $row ) use ( $labels ) {
@@ -77,7 +76,11 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Helper' ) ) {
 					'total'   => $this->ddwcac_make_summary( $total, $total_before ),
 					'stopped' => $this->ddwcac_make_summary( $current['stopped'], $before['stopped'] ),
 					'passed'  => $this->ddwcac_make_summary( $current['passed'], $before['passed'] ),
-					'rate'    => $this->ddwcac_make_summary( $rate, $rate_before ),
+					'rate'    => [
+						'value'   => $rate,
+						'stopped' => $current['stopped'],
+						'total'   => $total,
+					],
 					'ips'     => $this->ddwcac_make_summary( $current['unique_ips'], $before['unique_ips'] ),
 				],
 				'charts'     => [
@@ -184,11 +187,11 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Helper' ) ) {
 		 * @return array
 		 */
 		protected function ddwcac_make_summary( $value, $previous ) {
-			$change = $previous > 0 ? ( $value - $previous ) / $previous * 100 : ( $value > 0 ? 100 : 0 );
-
+			// Nothing in the previous period: no percentage to show, the card says so instead of a fake 100%.
 			return [
 				'value'       => $value,
-				'change'      => round( $change, 1 ),
+				'previous'    => $previous,
+				'change'      => $previous > 0 ? round( ( $value - $previous ) / $previous * 100, 1 ) : null,
 				'is_positive' => $value >= $previous,
 			];
 		}
