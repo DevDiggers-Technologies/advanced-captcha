@@ -9,7 +9,7 @@ Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 9.0
 WC tested up to: 11.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -94,6 +94,14 @@ See what the plugin is doing for you.
 * A trusted IP list for your office, staff and payment gateway callbacks, with single IPs, wildcards (203.0.113.*) and ranges (203.0.113.0/24)
 * Trust an IP straight from the log in one click
 * Works behind Cloudflare, load balancers and Nginx proxies, so the real visitor IP is used
+
+=== AI assistants (MCP) ===
+
+* Ask Claude, ChatGPT, Cursor, VS Code or any MCP client about your protection in plain words: "Is my checkout protected?", "How many bots did we stop this week?", "Which IPs keep attacking the login?"
+* Tools for protection status (provider and every protected form), a security report with the dashboard numbers, the verification log, the firewall (trusted IPs and repeat offenders) and a settings summary, plus a Weekly security review prompt
+* Optional: let the assistant add or remove trusted IPs. It stays off until you switch it on, and only administrators can use it
+* Secret keys are never shared with the assistant
+* Managed in DevDiggers Plugins > AI & MCP. Needs WordPress 6.9+ and the MCP Adapter (WooCommerce 10.3+ bundles it)
 
 === Reliable by default ===
 
@@ -279,6 +287,17 @@ The build configuration is in `webpack.config.js` and `babel.config.js`. Two thi
 
 == Changelog ==
 
+= 1.1.0 =
+* New: AI assistants (MCP): ask Claude, ChatGPT, Cursor, VS Code or any MCP client whether your forms are protected, how many bots were stopped, what the verification log and firewall show and how the plugin is set up, plus a Weekly security review prompt. Secret keys are never shared.
+* New: An AI tool to add or remove trusted IPs. It stays off until you allow changes, and only administrators can use it.
+* Improved: Updated the DevDiggers framework to 1.3.0, with a new DevDiggers Plugins > AI & MCP page: connect Claude, ChatGPT, Claude Code, Codex, Cursor, VS Code or any MCP client by signing in and clicking Allow in WordPress (nothing to copy), switch each plugin and each write tool on or off (write tools start off), try the tools and review an activity log.
+* Improved: Dashboard cards show the previous period's number, and the Block Rate card shows how many of all attempts were stopped.
+* Improved: Each recent stopped attempt on the dashboard opens the verification log filtered to that IP.
+* Improved: Softer outline on the built-in CAPTCHA image and the integration logos.
+* Improved: On edit screens the title bar with the Save button stays visible on desktop while you scroll.
+* Fixed: Dashboard cards no longer show a 100% rise when the previous period had no activity.
+* Fixed: Blank charts and unresponsive pickers on the plugin screens when a theme or another plugin replaces the shared Select2 script.
+
 = 1.0.0 =
 * New: Built-in CAPTCHA (simple sum or distorted characters) that works without keys, cookies or third party calls.
 * New: Cloudflare Turnstile, Google reCAPTCHA (v2 Checkbox, v2 Invisible, v3 with minimum score) and hCaptcha, with theme, size and language options.
@@ -294,6 +313,9 @@ The build configuration is in `webpack.config.js` and `babel.config.js`. Two thi
 * New: Setup wizard, suggested privacy policy text, HPOS and Cart and Checkout blocks compatibility.
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Adds AI assistant (MCP) tools, the DevDiggers framework 1.3.0 AI & MCP page and clearer dashboard numbers.
 
 = 1.0.0 =
 First release. After activating, run the setup wizard to choose a CAPTCHA and the forms to protect.

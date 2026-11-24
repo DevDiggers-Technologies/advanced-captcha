@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Advanced CAPTCHA 1.0.0\n"
+"Project-Id-Version: Advanced CAPTCHA 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/advanced-captcha\n"
-"POT-Creation-Date: 2026-10-24 14:52:03+00:00\n"
+"POT-Creation-Date: 2026-11-24 18:06:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,97 +56,100 @@ msgstr ""
 msgid "Rate the plugin"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:105 includes/admin-dashboard.php:75
+#: helper/dashboard/dashboard-helper.php:108 includes/admin-dashboard.php:75
+#: includes/integrations/mcp-integration.php:530
 #: templates/admin/configuration/configuration-template.php:72
 #: templates/admin/configuration/configuration-template.php:466
 msgid "Google reCAPTCHA"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:106
+#: helper/dashboard/dashboard-helper.php:109
 #: includes/admin/setup-wizard.php:138 includes/admin-dashboard.php:76
+#: includes/integrations/mcp-integration.php:531
 #: templates/admin/configuration/configuration-template.php:71
 #: templates/admin/configuration/configuration-template.php:595
 msgid "Cloudflare Turnstile"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:107
+#: helper/dashboard/dashboard-helper.php:110
 #: includes/admin/setup-wizard.php:140 includes/admin/setup-wizard.php:149
 #: includes/admin-dashboard.php:77
+#: includes/integrations/mcp-integration.php:532
 #: templates/admin/configuration/configuration-template.php:73
 #: templates/admin/configuration/configuration-template.php:653
 msgid "hCaptcha"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:132
+#: helper/dashboard/dashboard-helper.php:135
 msgid "Protection switched on"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:133
+#: helper/dashboard/dashboard-helper.php:136
 msgid "Advanced CAPTCHA is enabled in General settings."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:139
+#: helper/dashboard/dashboard-helper.php:142
 #. translators: %s: provider name.
 msgid "Built-in CAPTCHA active"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:139
+#: helper/dashboard/dashboard-helper.php:142
 msgid "%s keys saved"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:140
+#: helper/dashboard/dashboard-helper.php:143
 msgid "Self-hosted, so it needs no keys. Switch to a hosted provider any time."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:140
+#: helper/dashboard/dashboard-helper.php:143
 msgid "Both the site key and secret are required before any widget shows."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:146
+#: helper/dashboard/dashboard-helper.php:149
 #. translators: %d: number of protected forms.
 msgid "%d form protected"
 msgid_plural "%d forms protected"
 msgstr[0] ""
 msgstr[1] ""
 
-#: helper/dashboard/dashboard-helper.php:147
+#: helper/dashboard/dashboard-helper.php:150
 msgid "Login, registration and store forms bots target."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:152
+#: helper/dashboard/dashboard-helper.php:155
 msgid "Checkout protected"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:153
+#: helper/dashboard/dashboard-helper.php:156
 #: includes/admin/setup-wizard.php:222
 msgid "Blocks card-testing bots on classic and block checkout."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:158
+#: helper/dashboard/dashboard-helper.php:161
 msgid "Invisible honeypot on"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:159
+#: helper/dashboard/dashboard-helper.php:162
 msgid "Catches form-filling bots before the CAPTCHA runs."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:165
+#: helper/dashboard/dashboard-helper.php:168
 #: includes/admin/setup-wizard.php:285
 #: templates/admin/configuration/configuration-template.php:251
 msgid "Card-testing shield"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:166
+#: helper/dashboard/dashboard-helper.php:169
 msgid "Repeated failed payments lock the IP and email out of checkout."
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:172
+#: helper/dashboard/dashboard-helper.php:175
 #: includes/admin/setup-wizard.php:284
 #: templates/admin/configuration/configuration-template.php:300
 msgid "Brute-force lockout"
 msgstr ""
 
-#: helper/dashboard/dashboard-helper.php:173
+#: helper/dashboard/dashboard-helper.php:176
 msgid "Repeat offenders are locked out instead of retrying forever."
 msgstr ""
 
@@ -613,6 +616,7 @@ msgid "Notifications"
 msgstr ""
 
 #: includes/admin-dashboard.php:74
+#: includes/integrations/mcp-integration.php:529
 #: templates/admin/configuration/configuration-template.php:431
 msgid "Built-in CAPTCHA"
 msgstr ""
@@ -802,6 +806,176 @@ msgstr ""
 
 #: includes/global-functions.php:707
 msgid "Submitted too fast"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:98
+msgid ""
+"Ask which forms are protected and by which CAPTCHA, how many bots were "
+"stopped, who is attacking, what the logs say and which IPs are trusted."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:131
+msgid ""
+"Spam and bot protection: protected forms, CAPTCHA provider, verification "
+"logs, attack statistics and IP lists."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:216
+msgid "Protection status"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:217
+msgid ""
+"Whether protection is on, which CAPTCHA provider is in use (built-in, "
+"Google reCAPTCHA, Cloudflare Turnstile or hCaptcha) and whether it is "
+"ready, and every form set (WordPress, WooCommerce, Contact Form 7, form "
+"builders) with whether its plugin is installed and which forms are "
+"protected, plus the dashboard protection checklist. Start here for \"is my "
+"site protected\"."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:232
+msgid "Security report"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:233
+msgid ""
+"Verification numbers for a date range, the same as the Advanced CAPTCHA "
+"dashboard: checks, bots stopped, humans passed, block rate and attacking "
+"IPs, compared with the previous period of the same length, plus stops per "
+"day, the forms attacked most, why attempts were stopped and the top "
+"attacking IPs."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:237
+msgid ""
+"First day, Y-m-d in the site timezone. Defaults to 29 days before "
+"\"before\"."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:238
+msgid "Last day, Y-m-d. Defaults to today."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:251
+msgid "List verification logs"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:252
+msgid ""
+"The verification log, newest first, as on Advanced CAPTCHA > Logs: each "
+"check with its date, form, provider, result, reason, IP, page and browser. "
+"Filter by result (\"stopped\" means every result except passed), by form "
+"key (from captcha-protection-status or the \"form\" values here) or by part "
+"of an IP, reason or page URL."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:263
+msgid "Form key, e.g. login, registration, checkout, comment."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:267
+msgid "Part of an IP address, reason code or page URL."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:293
+msgid "Firewall status"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:294
+msgid ""
+"The Firewall screen: the IP lists (trusted IPs are never challenged; exact "
+"IPs, wildcards and CIDR ranges), the visitor IP source, and the repeat "
+"offenders of the last 7 days with how often each was stopped and whether it "
+"is on a list."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:306
+msgid "Settings summary"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:307
+msgid ""
+"The Advanced CAPTCHA configuration by tab: provider and language, error "
+"message, trusted roles, checkout placement, honeypot, visitor IP source, "
+"fail-open and logging, built-in CAPTCHA mode and each hosted provider's "
+"widget options. Secret keys are never returned; \"keys_saved\" says whether "
+"each hosted provider has both keys."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:320
+#: includes/integrations/mcp-integration.php:934
+msgid "Weekly security review"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:321
+msgid ""
+"Review the site's bot protection over a period: gaps in which forms are "
+"protected, attack trends, the forms and IPs under attack, and what to "
+"change."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:327
+msgid "Days to review, ending today. Defaults to 7."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:339
+msgid "Update an IP list"
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:340
+msgid ""
+"Add IPs to, or remove them from, an IP list on the Firewall screen, like "
+"its Trust IP / Untrust links. Trusted IPs never see a CAPTCHA on any form. "
+"Accepts exact IPv4 / IPv6 addresses, IPv4 wildcards (192.168.1.*) and CIDR "
+"ranges; anything else is refused. Returns the list after the change."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:357
+msgid "IPs, wildcards or CIDR ranges."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:613
+msgid "The start date must be before the end date."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:842
+msgid ""
+"Give \"list\" (one of the lists in captcha-firewall-status) and \"action\" "
+"(add or remove)."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:849
+msgid ""
+"No valid IP given. Use exact IPv4 / IPv6 addresses, IPv4 wildcards "
+"(192.168.1.*) or CIDR ranges (10.0.0.0/8)."
+msgstr ""
+
+#: includes/integrations/mcp-integration.php:913
+#. translators: 1: first day, 2: last day.
+msgid ""
+"Review my site's bot protection from %1$s to %2$s.\n"
+"\n"
+"Use the Advanced CAPTCHA tools:\n"
+"1. captcha-protection-status: is protection on, is the provider ready, "
+"which installed forms are not protected, and the checklist.\n"
+"2. captcha-security-report with after %1$s and before %2$s: stops, block "
+"rate and attacking IPs against the previous period, the forms attacked and "
+"why attempts were stopped.\n"
+"3. captcha-firewall-status: repeat offenders and the IP lists.\n"
+"4. captcha-list-logs with status stopped for the busiest form, to see what "
+"the attacks look like.\n"
+"\n"
+"Then write a short review for the site owner:\n"
+"- Headline: checks, bots stopped and block rate, and the change against the "
+"previous period in percent.\n"
+"- Protection gaps: installed forms or plugins that are not protected, a "
+"provider that is not ready, anything off on the checklist.\n"
+"- Under attack: the forms and IPs hit most, and whether any of them are "
+"trusted.\n"
+"- Up to three changes to make, most important first.\n"
+"Stick to the numbers the tools return and keep it under 250 words. Say "
+"plainly when nothing was stopped or logging is off."
 msgstr ""
 
 #: templates/admin/configuration/configuration-template.php:59
@@ -1653,10 +1827,6 @@ msgstr ""
 msgid "Humans Passed"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:63
-msgid "Block Rate"
-msgstr ""
-
 #: templates/admin/dashboard/dashboard-template.php:64
 msgid "Attacking IPs"
 msgstr ""
@@ -1712,51 +1882,68 @@ msgstr ""
 msgid "Recent Blocked Attempts"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:180
+#: templates/admin/dashboard/dashboard-template.php:161
+msgid "No change vs previous period"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:175
+msgid "Block Rate"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:179
+#. translators: 1: stopped attempts, 2: all attempts.
+msgid "%1$s of %2$s attempts stopped"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:179
+msgid "No attempts in this period"
+msgstr ""
+
+#: templates/admin/dashboard/dashboard-template.php:212
 msgid "Done"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:180
+#: templates/admin/dashboard/dashboard-template.php:212
 msgid "Fix"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:197
+#: templates/admin/dashboard/dashboard-template.php:229
 msgid "No offenders in this period"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:197
+#: templates/admin/dashboard/dashboard-template.php:229
 msgid "IPs that fail CAPTCHA most often will be listed here."
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:220
+#: templates/admin/dashboard/dashboard-template.php:252
 #. translators: 1: number of failed attempts, 2: human time difference.
 msgid "%1$s stopped attempts, last %2$s ago"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:224
+#: templates/admin/dashboard/dashboard-template.php:256
 msgid "Block"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:236
+#: templates/admin/dashboard/dashboard-template.php:268
 #. translators: %s: number of IP addresses.
 msgid "%s IP kept trying after 5 or more failures."
 msgid_plural "%s IPs kept trying after 5 or more failures."
 msgstr[0] ""
 msgstr[1] ""
 
-#: templates/admin/dashboard/dashboard-template.php:238
+#: templates/admin/dashboard/dashboard-template.php:270
 msgid "Lock them out automatically with Pro"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:253
+#: templates/admin/dashboard/dashboard-template.php:285
 msgid "All quiet"
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:253
+#: templates/admin/dashboard/dashboard-template.php:285
 msgid "Failed attempts will appear here as they happen."
 msgstr ""
 
-#: templates/admin/dashboard/dashboard-template.php:270
+#: templates/admin/dashboard/dashboard-template.php:309
 msgid "View all logs"
 msgstr ""
 

@@ -60,7 +60,7 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Template' ) ) {
 						$this->ddwcac_card( esc_html__( 'Verifications', 'advanced-captcha' ), $summary['total'], 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', true ),
 						$this->ddwcac_card( esc_html__( 'Bots Stopped', 'advanced-captcha' ), $summary['stopped'], 'M4.9 4.9l14.2 14.2M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z', false ),
 						$this->ddwcac_card( esc_html__( 'Humans Passed', 'advanced-captcha' ), $summary['passed'], 'M20 6 9 17l-5-5', true ),
-						$this->ddwcac_card( esc_html__( 'Block Rate', 'advanced-captcha' ), $summary['rate'], 'M3 3v18h18M7 15l4-4 3 3 5-6', false, '%' ),
+						$this->ddwcac_rate_card( $summary['rate'] ),
 						$this->ddwcac_card( esc_html__( 'Attacking IPs', 'advanced-captcha' ), $summary['ips'], 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20', false ),
 					],
 					'charts'        => [
@@ -144,20 +144,52 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Template' ) ) {
 		 * @param array  $summary    Summary row.
 		 * @param string $path       Icon path.
 		 * @param bool   $up_is_good Whether a rise is good news (more attacks is not).
-		 * @param string $suffix     Value suffix.
 		 * @return array
 		 */
-		protected function ddwcac_card( $title, $summary, $path, $up_is_good, $suffix = '' ) {
-			return [
+		protected function ddwcac_card( $title, $summary, $path, $up_is_good ) {
+			$card = [
 				'title'       => $title,
-				'value'       => $suffix ? esc_html( number_format_i18n( $summary['value'], 1 ) . $suffix ) : $summary['value'],
-				'value_type'  => $suffix ? 'html' : 'number',
+				'value'       => $summary['value'],
+				'value_type'  => 'number',
 				'change'      => $summary['change'],
+				'previous'    => number_format_i18n( $summary['previous'] ),
 				'is_positive' => $up_is_good ? $summary['is_positive'] : ! $summary['is_positive'],
-				'icon'        => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' . esc_attr( $path ) . '"/></svg>',
+				'icon'        => $this->ddwcac_icon( $path ),
+			];
+
+			if ( 0.0 === (float) $summary['change'] && null !== $summary['change'] ) {
+				$card['note'] = esc_html__( 'No change vs previous period', 'advanced-captcha' );
+			}
+
+			return $card;
+		}
+
+		/**
+		 * Block rate card: a share, so it says what it is made of instead of a period change.
+		 *
+		 * @param array $rate Rate row with value, stopped and total.
+		 * @return array
+		 */
+		protected function ddwcac_rate_card( $rate ) {
+			return [
+				'title'      => esc_html__( 'Block Rate', 'advanced-captcha' ),
+				'value'      => esc_html( number_format_i18n( $rate['value'], 1 ) . '%' ),
+				'value_type' => 'html',
+				/* translators: 1: stopped attempts, 2: all attempts. */
+				'note'       => $rate['total'] ? esc_html( sprintf( __( '%1$s of %2$s attempts stopped', 'advanced-captcha' ), number_format_i18n( $rate['stopped'] ), number_format_i18n( $rate['total'] ) ) ) : esc_html__( 'No attempts in this period', 'advanced-captcha' ),
+				'icon'       => $this->ddwcac_icon( 'M3 3v18h18M7 15l4-4 3 3 5-6' ),
 			];
 		}
 
+		/**
+		 * Card icon.
+		 *
+		 * @param string $path SVG path.
+		 * @return string
+		 */
+		protected function ddwcac_icon( $path ) {
+			return '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' . esc_attr( $path ) . '"/></svg>';
+		}
 
 		/**
 		 * Protection checklist widget.
@@ -230,7 +262,7 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Template' ) ) {
 			$repeat = count( array_filter( $ips, fn( $row ) => (int) $row['total'] >= 5 ) );
 			if ( $repeat ) {
 				?>
-				<p class="ddwcac-dash-list-more">
+				<p class="ddfw-dash-list-footer">
 					<?php
 					/* translators: %s: number of IP addresses. */
 					echo esc_html( sprintf( _n( '%s IP kept trying after 5 or more failures.', '%s IPs kept trying after 5 or more failures.', $repeat, 'advanced-captcha' ), number_format_i18n( $repeat ) ) );
@@ -254,20 +286,27 @@ if ( ! class_exists( 'DDWCAC_Dashboard_Template' ) ) {
 				return;
 			}
 
-			$labels = ddwcac_get_form_labels();
+			$labels   = ddwcac_get_form_labels();
+			$statuses = ddwcac_get_status_labels();
+			$items    = [];
+
+			foreach ( $rows as $row ) {
+				$items[] = [
+					'url'   => ddwcac_get_dashboard_url(
+						[
+							'menu' => 'logs',
+							's'    => $row['ip'],
+						]
+					),
+					'title' => ( $labels[ $row['form'] ] ?? $row['form'] ) . ' · ' . $row['ip'],
+					'meta'  => ddwcac_get_reason( $row['reason'] ) . ' · ' . mysql2date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $row['created_at'] ),
+					'value' => '<mark class="ddwcac-status ddwcac-status-' . esc_attr( $row['status'] ) . '">' . esc_html( $statuses[ $row['status'] ] ?? $row['status'] ) . '</mark>',
+				];
+			}
+
+			DDFW_Dashboard::render_list( $items, '', false );
 			?>
-			<div class="ddwcac-dash-list">
-				<?php foreach ( $rows as $row ) : ?>
-					<div class="ddwcac-dash-list-item">
-						<div class="ddwcac-dash-list-info">
-							<strong><?php echo esc_html( ( $labels[ $row['form'] ] ?? $row['form'] ) . ' · ' . $row['ip'] ); ?></strong>
-							<span><?php echo esc_html( ddwcac_get_reason( $row['reason'] ) . ' · ' . mysql2date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $row['created_at'] ) ); ?></span>
-						</div>
-						<mark class="ddwcac-status ddwcac-status-<?php echo esc_attr( $row['status'] ); ?>"><?php echo esc_html( ddwcac_get_status_labels()[ $row['status'] ] ?? $row['status'] ); ?></mark>
-					</div>
-				<?php endforeach; ?>
-			</div>
-			<p class="ddwcac-dash-list-more"><a href="<?php echo esc_url( ddwcac_get_dashboard_url( [ 'menu' => 'logs' ] ) ); ?>"><?php esc_html_e( 'View all logs', 'advanced-captcha' ); ?></a></p>
+			<p class="ddfw-dash-list-footer"><a href="<?php echo esc_url( ddwcac_get_dashboard_url( [ 'menu' => 'logs' ] ) ); ?>"><?php esc_html_e( 'View all logs', 'advanced-captcha' ); ?></a></p>
 			<?php
 		}
 

@@ -3,7 +3,7 @@
 Spam protection for WordPress and WooCommerce forms: a no-keys built-in CAPTCHA, Cloudflare Turnstile, Google reCAPTCHA or hCaptcha, plus an invisible honeypot and a security dashboard.
 
 * **Slug / text domain:** `advanced-captcha`
-* **Version:** 1.0.0
+* **Version:** 1.1.0
 * **Live Demo:** https://demo.devdiggers.com/woocommerce-advanced-captcha-free/
 * **Pro:** https://devdiggers.com/product/woocommerce-advanced-captcha/
 * **License:** GPLv3 or later
@@ -34,6 +34,16 @@ Spam protection for WordPress and WooCommerce forms: a no-keys built-in CAPTCHA,
 * Fail-open on provider outages; a hosted provider without both keys stays off
 * Setup wizard, HPOS and Cart/Checkout blocks compatible
 
+## AI assistants (MCP)
+
+Ask Claude, ChatGPT, Cursor, VS Code or any MCP client about your protection in plain words: "Is my checkout protected?", "How many bots did we stop this week?", "Which IPs keep attacking the login?"
+
+* Tools for protection status (provider and every protected form), a security report with the dashboard numbers, the verification log, the firewall (trusted IPs and repeat offenders) and a settings summary, plus a Weekly security review prompt
+* Optional: add or remove trusted IPs, off until the owner switches it on, administrators only, logged under WooCommerce > Status > Logs when WooCommerce is active
+* Secret keys are never returned
+* Managed in DevDiggers Plugins > AI & MCP: one MCP server for every DevDiggers plugin, an on / off switch per plugin and per write tool, a Try panel and an activity log
+* Needs WordPress 6.9+ (Abilities API) and the MCP Adapter (WooCommerce 10.3+ bundles it)
+
 ## Pro
 
 [Advanced CAPTCHA Pro](https://devdiggers.com/product/woocommerce-advanced-captcha/) is an add-on that needs this plugin installed. When Pro is active this plugin stands down (`DDWCAC_Init` exists) and Pro runs the full feature set with the same options:
@@ -62,6 +72,8 @@ if ( ! $result['success'] ) {
 | `ddwcac_modify_admin_menu_capability` | filter | Capability for the admin screens |
 | `ddwcac_loaded` | action | Plugin loaded |
 
+MCP abilities live in `includes/integrations/mcp-integration.php` under the `captcha/` namespace. Add, change or remove one with the `ddwcac_mcp_abilities` filter.
+
 Options are stored as `_ddwcac_<key>`; logs live in `{prefix}ddwcac_logs`.
 
 ## Build
@@ -79,6 +91,18 @@ php bin/test-free-boundary.php
 * Docs: https://docs.devdiggers.com/advanced-captcha/
 
 ## Changelog
+
+### 1.1.0
+
+* Added AI assistants (MCP): ask Claude, ChatGPT, Cursor, VS Code or any MCP client whether your forms are protected, how many bots were stopped, what the verification log and firewall show and how the plugin is set up, plus a Weekly security review prompt. Secret keys are never shared.
+* Added an AI tool to add or remove trusted IPs. It stays off until you allow changes, and only administrators can use it.
+* Updated the DevDiggers framework to 1.3.0, with a new DevDiggers Plugins > AI & MCP page: connect Claude, ChatGPT, Claude Code, Codex, Cursor, VS Code or any MCP client by signing in and clicking Allow in WordPress (nothing to copy), switch each plugin and each write tool on or off (write tools start off), try the tools and review an activity log.
+* Dashboard cards show the previous period's number, and the Block Rate card shows how many of all attempts were stopped.
+* Each recent stopped attempt on the dashboard opens the verification log filtered to that IP.
+* Softer outline on the built-in CAPTCHA image and the integration logos.
+* On edit screens the title bar with the Save button stays visible on desktop while you scroll.
+* Fixed dashboard cards showing a 100% rise when the previous period had no activity.
+* Fixed blank charts and unresponsive pickers on the plugin screens when a theme or another plugin replaces the shared Select2 script.
 
 ### 1.0.0 (Initial release)
 
