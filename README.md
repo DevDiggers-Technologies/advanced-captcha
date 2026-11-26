@@ -12,7 +12,7 @@ Spam protection for WordPress and WooCommerce forms: a no-keys built-in CAPTCHA,
 
 | | |
 |---|---|
-| WordPress | 6.5+ (tested up to 7.1) |
+| WordPress | 6.9+ (tested up to 7.1) |
 | PHP | 7.4+ |
 | WooCommerce | Optional, 9.0+ (tested up to 11.2) |
 
